@@ -1,27 +1,16 @@
 #include <stdio.h>
 int main()
 {
-    int k=8;
-    
-    for (int i=1;i<=2;i++)
-    {
-        for(int j=1;j<=20;j++)
-        printf("*");
-        printf("\n");
-    }
-    for(int i=1;i<=7;i++)
+    int t=-6;
+    for(int i=1;i<=9;i++,t+=2)
     {
         for(int j=1;j<=20;j++)
         {
-        if(i+j<=7 || i+j>=k)
-        {
+            if (i+j>=10 && i+j<=t+11)
+            printf("0");
+            else 
             printf("*");
         }
-        else 
-        printf("0");
-      
-        }
-        k+=2;
-     printf("\n");
+        printf("\n");
     }
 }
