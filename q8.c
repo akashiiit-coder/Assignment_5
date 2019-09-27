@@ -5,14 +5,10 @@ int main()
     {
         for(int j=1;j<=20;j++)
         {
-        if(i+j<=7 || i+j>=13)
-        {
-            printf("0");
+            if((i+j>=8 && j<=11 && i<=8) || (i+j>=8 && i>8))
+            printf("*");
+            else printf("0");
         }
-        else 
-        printf("*");
-      
-        }
-     printf("\n");
+        printf("\n");
     }
 }
